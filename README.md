@@ -13,9 +13,9 @@ Enter the following address into your browser's search bar: http://127.0.0.1:500
 
 ** CLI Usage **
 ```
-app.py _priceFrom_ _priceTo_
+cli.py _priceFrom_ _priceTo_
 
 Example:
-app.py ETH BTC
+cli.py ETH BTC
 => One ETH is worth X BTC (X being the actual value fetched from CRYPTOCOMPARE using their API)
 ```
