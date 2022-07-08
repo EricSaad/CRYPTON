@@ -4,12 +4,12 @@ CRYPTON is a web-based interface allowing you to check the price of verious cryp
 
 
 To run the code:
-<sub>
+```
 pip3 install flask
 pip3 install cryptocompare
 Run app.py
 Enter the following address into your browser's search bar: http://127.0.0.1:5000/
-<sub>
+```
 
 ** CLI Usage **
 ```
