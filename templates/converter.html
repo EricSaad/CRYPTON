@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block title %}Crypton calculator{% endblock %}
+
+{% block content %}
+<center>
+
+    <form action="#" method="POST">
+        <h2>Convert:</h2>
+    
+        
+        <p>
+            From 
+            <input type="text" name="FROM" value = "BTC"> 
+            To 
+            <input type="text" name="TO" value = "USDT">
+    
+            <input type="submit" name="CONVERT" value="Convert">
+
+            <br>
+        </p><br>
+    
+        {{fromResult}}
+        {{toResult}}
+        {{toResultName}}
+        <p>
+            <p>Amount of {{amountResult}} </p>
+            <input type="text" name="AMOUNT" value="1">
+        </p>
+        {{coefAmount}}  {{fromResult}} {{resultAmount}} {{toResultName}}
+        <bold><h2>{{invalid}}</h2></bold>
+        <br>
+        <img src="static/pictures/convertlast.png">
+    </form>
+
+</center>
+{% endblock %}

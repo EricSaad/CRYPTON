@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="Crypton%20calculator_files/basestyles.css">
+    <title>Crypton calculator</title>
+
+</head>
+
+
+<body id="bg" class=".drkbg">
+    
+    <header>
+        <ul>
+            <li><a class="active" href="http://127.0.0.1:5000/">Home</a></li>
+            <li><a href="http://127.0.0.1:5000/convert">Converter</a></li>
+            <li><a href="http://127.0.0.1:5000/swap">SWAP</a></li>
+            <li><a href="http://127.0.0.1:5000/charts">Charts</a></li>
+    
+            <label class="switch" style="float:right">
+                <input type="checkbox" value="Night Mode" onclick="myFunction()">
+                <span class="slider round"></span>
+            </label>
+            
+            <li style="float:right;"><a href="#about">About</a></li>
+            
+    
+            
+    
+          </ul> 
+          
+<center>
+
+    <form action="#" method="POST">
+        <h2>Convert:</h2>
+    
+        
+        <p>
+            From 
+            <input type="text" name="FROM"> 
+            To 
+            <input type="text" name="TO">
+    
+            <input type="submit" name="CONVERT">
+
+            <br>
+        </p>
+        <p>
+            <input type="text" name="AMOUNT">
+        </p>
+    
+    
+    
+        BTC = 
+        120627.26
+        DOGE
+    </form>
+
+</center>
+
+          <script>
+              
+    
+              function myFunction() {
+                 var element = document.getElementById("bg"); element.classList.toggle("drkbg");
+                 var element = document.querySelector(".content a");element.style.color = "white";
+                } 
+
+
+            document.cookie = "theme=Dark"; 
+
+            var x = document.cookie;
+                
+          </script>
+    </header>
+    
+
+
+
+
+
+</body></html>

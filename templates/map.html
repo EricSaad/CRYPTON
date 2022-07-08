@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+
+{% block title %}Crypton{% endblock %}
+
+{% block contents %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Crypto Map</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <style type="text/css">
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+
+      /* Optional: Makes the sample page fill the window. */
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <script>
+      let map;
+
+      function initMap() {
+        map = new google.maps.Map(document.getElementById("map"), {
+          center: { lat: 33.855491290657575, lng: 35.52004386996291 },
+          zoom: 10,
+        });
+      
+        var icon1 = {
+          url: "static/pictures/resizedbtc.png",
+          scale: 0.001,
+        }
+
+        var marker = new google.maps.Marker({ 
+          position: new google.maps.LatLng(33.8998446926756, 35.57409479817462), 
+          title: 'Choueh law firm: +961 03163160',
+          icon: icon1,
+          
+          map:map});
+
+
+
+        var marker = new google.maps.Marker({ 
+          position: new google.maps.LatLng(33.87226090018747, 35.51642858282955), 
+          title: "GameFactory: +961 01388664",
+          icon: icon1,
+          
+          map:map});
+
+          var marker = new google.maps.Marker({ 
+          position: new google.maps.LatLng(33.869145196765274, 35.54182588282933), 
+          title: "Rkein Motors: +961 03000420",
+          icon: icon1,
+          map:map});
+
+          var marker = new google.maps.Marker({ 
+          position: new google.maps.LatLng(33.88555291232018, 35.511132811326746), 
+          title: "CHOGA Cocolatier: +961 81616505",
+          icon: icon1,
+          map:map});
+
+          var marker = new google.maps.Marker({ 
+          position: new google.maps.LatLng(33.85844158305358, 35.51997550149652), 
+          title: "AZ STORES.SARL: +961 70019793",
+          icon: icon1,
+          map:map});
+          
+          var marker = new google.maps.Marker({ 
+          position: new google.maps.LatLng(33.8983535154162, 35.53891713494647), 
+          title: "Azar & Abi Habib Est: +961 01258431",
+          icon: icon1,
+          map:map});
+    
+    
+      }
+    
+      
+
+
+    </script>
+  </head>
+  <body>
+    <div id="map"></div>
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQUKL5XuoJ99hoAuVaum3_eDVsJug1Cuc&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+  </body>
+</html>
+
+
+{% endblock %}
